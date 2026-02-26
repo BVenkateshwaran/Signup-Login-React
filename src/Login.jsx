@@ -25,7 +25,6 @@ function reducer(state,action)
       return initialState
     }
   }
-
 }
 
 const initialState = {
@@ -50,7 +49,7 @@ const Login = () => {
           e.preventDefault()
           dispatch({type:"submit",payload:state})
         }}>Login</button>
-        
+
         <button onClick={(e)=>{
           e.preventDefault()
           dispatch({type:"reset"})
