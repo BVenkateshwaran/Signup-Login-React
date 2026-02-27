@@ -1,5 +1,6 @@
 import React,{useContext} from 'react'
 import { myContext } from './Products.jsx'
+
 const AllProducts = () => {
   const data = useContext(myContext)
   console.log(data);
