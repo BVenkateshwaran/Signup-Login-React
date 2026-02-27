@@ -4,6 +4,7 @@ const Signup = () => {
   
   let [formData, setFormData] = useState({
     uname:"",
+    phno:"",
     email:"",
     password:""
   })
@@ -25,6 +26,14 @@ const Signup = () => {
       <form action="" onSubmit={handleSubmit}>
         <label htmlFor="uname">Username : </label>
         <input type="text" name="uname" id="uname" placeholder='Enter username' onChange={handleChange} />
+        <label htmlFor="phno">Phone Number : </label>
+        <input type="tel" name="phno" id="phno" placeholder='Enter phone number' onChange={handleChange} />
+        <label htmlFor="gender">Gender : </label>
+        <select name="gender" id="gender" onChange={handleChange}>
+          <option value="">Select gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
         <label htmlFor="email">Email : </label>
         <input type="email" name="email" id="email" placeholder='Enter email' onChange={handleChange} />
         <label htmlFor="password">Password : </label>
