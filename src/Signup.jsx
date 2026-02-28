@@ -15,6 +15,7 @@ const Signup = () => {
     console.log(e.target.name);
     console.log(e.target.value);
   }
+  
   function handleSubmit(e)
   {
     e.preventDefault();
