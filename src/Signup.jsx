@@ -34,11 +34,14 @@ const Signup = () => {
           <option value="male">Male</option>
           <option value="female">Female</option>
         </select>
+        <label htmlFor="dob">Date of Birth : </label>
+        <input type="date" name="dob" id="dob" onChange={handleChange} />
         <label htmlFor="email">Email : </label>
         <input type="email" name="email" id="email" placeholder='Enter email' onChange={handleChange} />
         <label htmlFor="password">Password : </label>
         <input type="password" name="password" id="password" placeholder='Enter password' onChange={handleChange} />
         <button type="submit">Signup</button>
+        <a href="/login">Already have an account? Login</a>
       </form>
     </div>
   )
