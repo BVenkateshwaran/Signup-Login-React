@@ -36,10 +36,9 @@ const Login = () => {
   let [state,dispatch] = useReducer(reducer,initialState)
   return (
     <div>
-
       <h1>Login</h1>
-
       <form action="">
+
         <label htmlFor="email">Email : </label>
         <input type="email" id="email" value={state.email} onChange={(e)=>dispatch({type:"email",payload:e.target.value})}/>
         <label htmlFor="password">Password : </label>
@@ -54,6 +53,7 @@ const Login = () => {
           e.preventDefault()
           dispatch({type:"reset"})
         }}>Reset</button>
+        
       </form>
     </div>
   )
