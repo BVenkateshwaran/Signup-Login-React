@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import { Link } from 'react-router-dom'
 
 const Signup = () => {
   
@@ -42,7 +43,7 @@ const Signup = () => {
         <label htmlFor="password">Password : </label>
         <input type="password" name="password" id="password" placeholder='Enter password' onChange={handleChange} />
         <button type="submit">Signup</button>
-        <a href="/login">Already have an account? Login</a>
+        <Link to="/login">Already have an account? Login</Link>
       </form>
     </div>
   )
