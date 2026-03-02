@@ -1,4 +1,5 @@
 import React,{useReducer} from 'react'
+import { Link } from 'react-router-dom'
 
 function reducer(state,action)
 {
@@ -53,7 +54,9 @@ const Login = () => {
           e.preventDefault()
           dispatch({type:"reset"})
         }}>Reset</button>
-        
+
+        <Link to="/signup">Don't have an account? Signup</Link>
+
       </form>
     </div>
   )
