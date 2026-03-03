@@ -23,7 +23,7 @@ const Signup = () => {
     console.log(formData);
   }
   return (
-    <div>
+    <div className='signup'>
       <h1>Signup</h1>
       <form action="" onSubmit={handleSubmit}>
         <label htmlFor="uname">Username : </label>

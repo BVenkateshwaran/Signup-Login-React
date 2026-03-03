@@ -4,6 +4,7 @@ import Signup from './Signup.jsx'
 import Login from './Login.jsx'
 import Products from './Products.jsx'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
+import './App.css'
 
 let router = createBrowserRouter([
   {
