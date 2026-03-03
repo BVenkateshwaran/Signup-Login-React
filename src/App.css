@@ -1,4 +1,15 @@
 .signup
 {
     background-color: blue;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+form
+{
+    height: 60%;
+    width: 30%;
 }
