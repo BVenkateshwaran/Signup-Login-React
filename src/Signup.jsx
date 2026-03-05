@@ -22,6 +22,7 @@ const Signup = () => {
     e.preventDefault();
     console.log(formData);
   }
+  
   return (
     <div className='signup'>
       <h1>Signup</h1>
